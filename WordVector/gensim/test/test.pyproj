@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0929647d-d5e4-499d-bb62-ff544f76f655}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>simspeed.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="simspeed.py" />
+    <Compile Include="simspeed2.py" />
+    <Compile Include="svd_error.py" />
+    <Compile Include="test_big.py" />
+    <Compile Include="test_corpora.py" />
+    <Compile Include="test_corpora_dictionary.py" />
+    <Compile Include="test_corpora_hashdictionary.py" />
+    <Compile Include="test_lee.py" />
+    <Compile Include="test_miislita.py" />
+    <Compile Include="test_models.py" />
+    <Compile Include="test_parsing.py" />
+    <Compile Include="test_similarities.py" />
+    <Compile Include="test_utils.py" />
+    <Compile Include="test_word2vec.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test_data\head500.noblanks.cor_wordids.txt" />
+    <Content Include="test_data\para2para_text1.txt" />
+    <Content Include="test_data\para2para_text2.txt" />
+    <Content Include="test_data\similarities0-1.txt" />
+    <Content Include="test_data\testcorpus.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test_data" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
