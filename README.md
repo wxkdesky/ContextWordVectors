@@ -4,7 +4,7 @@ This is a context based word vector tool
 This is a c++ version of LDA implementation
 `It is not the traditional LDA with P(w|z) and P(z|d).`
 When applying this kind of LDA implementation, every word will be assigned with a fixed topic with top possibility among all the possible topics.
-##Uage
+##Usage
 ###Linux Users
 Open `LDA` folder and go to `src` folder, then
 `make`.
