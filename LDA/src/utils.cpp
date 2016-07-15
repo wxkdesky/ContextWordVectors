@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <string>
 #include <map>
+#include <stdlib.h>
 #include "strtokenizer.h"
 #include "utils.h"
 #include "model.h"

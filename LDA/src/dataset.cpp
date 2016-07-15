@@ -247,7 +247,7 @@ int dataset::read_newdata(string dfile, string wordmapfile) {
 		    id2_id.insert(pair<int, int>(it->second, _id));
 		    _id2id.insert(pair<int, int>(_id, it->second));			
 			newword2id.insert(pair<string, int>(it->first, _id));
-			printf("%s,%d added!\n", it->first, _id);
+			printf("%s,%d added!\n", it->first.c_str(), _id);
 		} else {
 		    _id = _it->second;
 		}
@@ -338,7 +338,7 @@ int dataset::read_newdata_withrawstrs(string dfile, string wordmapfile) {
 		    id2_id.insert(pair<int, int>(it->second, _id));
 		    _id2id.insert(pair<int, int>(_id, it->second));
 			newword2id.insert(pair<string, int>(it->first, _id));
-			printf("%s,%d added!\n", it->first, _id);
+			printf("%s,%d added!\n", it->first.c_str(), _id);
 		} else {
 		    _id = _it->second;
 		}

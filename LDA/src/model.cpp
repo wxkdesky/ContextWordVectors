@@ -603,7 +603,6 @@ int model::init_est() {
     // K: from command line or default value
     // alpha, beta: from command line or default values
     // niters, savestep: from command line or default values
-
     nw = new int*[V];
     for (w = 0; w < V; w++) {
         nw[w] = new int[K];
@@ -632,6 +631,7 @@ int model::init_est() {
 
     srandom(time(0)); // initialize for random number generation
     z = new int*[M];
+    printf("start to train");
     for (m = 0; m < ptrndata->M; m++) {
 	int N = ptrndata->docs[m]->length;
 	z[m] = new int[N];
