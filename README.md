@@ -46,3 +46,13 @@ The dataset is `SCWS`. And all the data in the `WordSimilarity` is just a demo, 
 
 ##Usage
 you need to go through the `solveLDA.py` in the folder and pay attention to the directories shown in the code in order to make it run correctly.
+
+#Text Classification
+The dataset is `20NewsGroup`. You can download this dataset in `http://qwone.com/~jason/20Newsgroups/`. I recommend the 20news-bydate.tar.gz because it has divided the data into training part and testing part.
+The code is written in Python.
+##Usage
+You need install scikit-learn package.
+First of all,you need run LDA method to generate inference files. Put them together with training and testing data.
+There are 3 file .py files. You need to extract the .tar.gz file in the current "TextClassification/" folder. And then run ForLDAUse.py,Preprocess.py and finally the svm.py.
+
+Good luck!
