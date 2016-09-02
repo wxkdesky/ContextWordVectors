@@ -53,6 +53,7 @@ The code is written in Python.
 ##Usage
 You need install scikit-learn package.
 First of all,you need run LDA method to generate inference files. Put them together with training and testing data.
-There are 3 file .py files. You need to extract the .tar.gz file in the current "TextClassification/" folder. And then run ForLDAUse.py,Preprocess.py and finally the svm.py.
+There are 3 file .py files. You need to extract the .tar.gz file in the current "TextClassification/" folder. And then run ForLDAUse.py->Preprocess.py->svm.py one after another.
 
+If met with any problem, please contact me:`wxkdesky@hotmail.com`
 Good luck!
